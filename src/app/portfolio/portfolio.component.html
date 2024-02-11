@@ -1,0 +1,81 @@
+<div class="container pb-5 mt-5 pt-5">
+    <div class="row g-md-5 gy-5">
+        <h2 class="pt-5 h2-style main-color">PORTFOLIO COMPONENT</h2>
+        <div class="text-center position-relative">
+            <i class="star fa-solid fa-star main-color position-absolute"></i>
+        </div>
+
+        <div class="col-md-4">
+            <div class="position-relative portfolio-card" (click)="showModel1()">
+                <div class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center">
+                    <i class="layer-icon fa-solid fa-plus"></i>
+                </div>
+                <img src="assets/portfolio/poert1.png" class="w-100 rounded-2">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative portfolio-card" (click)="showModel2()">
+                <div class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center">
+                    <i class="layer-icon fa-solid fa-plus"></i>
+                </div>
+                <img src="assets/portfolio/port2.png" class="w-100 rounded-2" >
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative portfolio-card" (click)="showModel3()">
+                <div class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center">
+                    <i class="layer-icon fa-solid fa-plus"></i>
+                </div>
+                <img src="assets/portfolio/port3.png" class="w-100 rounded-2" >
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative portfolio-card" (click)="showModel1()">
+                <div class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center">
+                    <i class="layer-icon fa-solid fa-plus"></i>
+                </div>
+                <img src="assets/portfolio/poert1.png" class="w-100 rounded-2" >
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative portfolio-card" (click)="showModel2()">
+                <div class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center">
+                    <i class="layer-icon fa-solid fa-plus"></i>
+                </div>
+                <img src="assets/portfolio/port2.png" class="w-100 rounded-2" >
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative portfolio-card" (click)="showModel3()">
+                <div class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center">
+                    <i class="layer-icon fa-solid fa-plus"></i>
+                </div>
+                <img src="assets/portfolio/port3.png" class="w-100 rounded-2" >
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="img1Flag" class="model position-fixed d-flex align-items-center" id="model" >
+    <div class="layer-model position-fixed top-0 start-0 end-0 bottom-0 z-n1" (click)="closeModel()">
+    </div>
+    <div class="modal-card w-40 mx-auto">
+        <img [src]="imgesSrc[0]" class="w-100 rounded-2">
+    </div>
+</div>
+
+<div *ngIf="img2Flag" class="model position-fixed d-flex align-items-center" id="model" >
+    <div class="layer-model position-fixed top-0 start-0 end-0 bottom-0 z-n1" (click)="closeModel()">
+    </div>
+    <div class="modal-card w-40 mx-auto">
+        <img [src]="imgesSrc[1]" class="w-100 rounded-2" >
+    </div>
+</div>
+
+<div *ngIf="img3Flag" class="model position-fixed d-flex align-items-center" id="model" >
+    <div class="layer-model position-fixed top-0 start-0 end-0 bottom-0 z-n1" (click)="closeModel()">
+    </div>
+    <div class="modal-card w-40 mx-auto">
+        <img [src]="imgesSrc[2]" class="w-100 rounded-2" >
+    </div>
+</div>

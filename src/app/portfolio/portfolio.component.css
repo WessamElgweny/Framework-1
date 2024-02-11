@@ -1,0 +1,55 @@
+.w-40{
+    width: 40%;
+}
+.portfolio-card:hover .layer{
+    opacity: 0.9;
+    cursor:pointer;
+}
+.layer{
+    opacity: 0;
+    transition: all 0.3s;
+}
+.layer-icon{
+    font-size: 100px;
+    color: white;
+}
+
+.h2-style::before{
+    content: "";
+    position: absolute;
+    top: 140%;
+    right: 25%;
+    width: 20%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #2C3E50;
+}
+
+.h2-style::after{
+    content: "";
+    position: absolute;
+    top: 140%;
+    left: 25%;
+    width: 20%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #2C3E50;
+}
+.star{
+    top:-33px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.model{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 8888;
+}
+
+.layer-model{
+    background-color: rgba(13, 110, 253, 0.2);
+}

@@ -1,0 +1,21 @@
+h3{
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 500;
+}
+.footer{
+    background-color: #2C3E50;
+    color: white;
+}
+
+.icon-container{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer-pragraph{
+    background-color: #1A252F;
+    height: 60px;
+}

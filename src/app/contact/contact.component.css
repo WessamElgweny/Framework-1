@@ -1,0 +1,57 @@
+.w-60{
+    width: 60%;
+}
+.h2-style::before{
+    content: "";
+    position: absolute;
+    top: 140%;
+    right: 25%;
+    width: 20%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #2C3E50;
+}
+.h2-style::after{
+    content: "";
+    position: absolute;
+    top: 140%;
+    left: 25%;
+    width: 20%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #2C3E50;
+}
+.form-control{
+    border: none;
+    border-bottom: solid 1px #dee2e6;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+.form{
+    background-color: teal;
+}
+
+.hide-input-lable{
+    position: relative;
+    padding-left: 10px;
+    color:#1ABC9C;
+    transition: all 0.5s;
+    top: 50px;
+}
+
+.show-input-lable{
+    position: relative;
+    padding-left: 10px;
+    color:#1ABC9C;
+    transition: all 0.5s;
+    top: 10px;
+}
+
+button{
+    background-color: #1ABC9C;
+}
+button:hover{
+    background-color: #1ABC9C;
+}
